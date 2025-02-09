@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">Event<span>Hub</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login" class="btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Unforgettable Events, <br> Crafted with Passion!</h1>
+        <p>We create magical experiences for every occasion.</p>
+        <a href="#events" class="btn">Explore Events</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We specialize in creating extraordinary events, from weddings to corporate gatherings.</p>
+    </section>
+
+    <section class="stats">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>😊 Overjoyed Customers</h3>
+                    <p>100% Satisfaction</p>
+                </div>
+                <div class="flip-card-back">
+                    <h3>🎉 Every Client Leaves with a Smile!</h3>
+                    <p>We ensure your events are truly special!</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>🎊 500+ Grand Celebrations</h3>
+                    <p>Unforgettable Moments Created</p>
+                </div>
+                <div class="flip-card-back">
+                    <h3>💫 Every Event, A Masterpiece!</h3>
+                    <p>We have successfully managed over 500+ breathtaking events.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>⭐️ 5-Star Ratings</h3>
+                    <p>Clients Love Us!</p>
+                </div>
+                <div class="flip-card-back">
+                    <h3>💖 Rated Best by Our Customers!</h3>
+                    <p>Our attention to detail makes every event shine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section class="login" id="login">
+        <h2 style="text-align: center;">User Authentication</h2>
+        <form action="#" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+            <p>or <a href="#">Register</a></p>
+            <p><a href="#">Guest Login</a></p>
+        </form>
+    </section>
+
+    <!-- Event Dashboard Section -->
+    <section class="events" id="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-filter">
+            <label for="category">Filter by Category:</label>
+            <select id="category" name="category">
+                <option value="all">All</option>
+                <option value="wedding">Wedding</option>
+                <option value="corporate">Corporate</option>
+                <option value="festival">Festival</option>
+            </select>
+            
+            <label for="date">Filter by Date:</label>
+            <input type="date" id="date" name="date">
+        </div>
+        
+        <div class="event-list">
+            <div class="event">
+                <img src="event1.jpg" alt="Event 1">
+                <h3>Luxury Wedding</h3>
+                <p>An elegant wedding planned to perfection.</p>
+                <p>Attendees: <span class="attendees">50</span></p>
+            </div>
+            <div class="event">
+                <img src="event2.jpg" alt="Event 2">
+                <h3>Corporate Conference</h3>
+                <p>Seamless event execution for professionals.</p>
+                <p>Attendees: <span class="attendees">120</span></p>
+            </div>
+            <div class="event">
+                <img src="event3.jpg" alt="Event 3">
+                <h3>Music Festival</h3>
+                <p>Live the music, enjoy the moment.</p>
+                <p>Attendees: <span class="attendees">200</span></p>
+            </div>
+        </div>
+
+        <!-- Event Creation Form -->
+        <h2>Create an Event</h2>
+        <form action="#" method="POST">
+            <label for="event-name">Event Name</label>
+            <input type="text" id="event-name" name="event-name" required>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="event-date">Date and Time</label>
+            <input type="datetime-local" id="event-date" name="event-date" required>
+
+            <button type="submit">Create Event</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Let's create something amazing together.</p>
+        <a href="mailto:info@eventhub.com" class="btn">Get in Touch</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 EventHub | Designed with ❤️</p>
+    </footer>
+
+</body>
+</html>
